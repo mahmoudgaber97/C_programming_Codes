@@ -3,7 +3,7 @@
 u32 Summation_u32Digits(u32 u32Iputnumber);
 u32 Summation_u32Digits(u32 u32Iputnumber){
 	
-	static u32  u32Summation=0;
+	static u32  u32Summation=0; /*return varabil is static due to storge in data segment in flash so at recursion function this varable does not remove*/
 	 u32 u32Rem;
 	if(u32Iputnumber!=0)
 	{
