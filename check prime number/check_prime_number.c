@@ -5,6 +5,8 @@ u32 Chack_u32Number(u32 u32Number){
 	u32 u32Counter=2,u32Flag=0;
 	if(u32Number==2)
 		u32Flag=0;
+	else if(u32Number==1)
+		u32Flag=1;
 	else{
 	while(u32Counter <= u32Number/2){
 		if(u32Number%u32Counter==0){
