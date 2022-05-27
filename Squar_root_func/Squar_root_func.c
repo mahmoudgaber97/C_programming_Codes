@@ -12,10 +12,10 @@ int main (){
 	do{
 	printf("enter number:");
 	scanf("%d",&u32Input);
-	u32SquareRoot=Fun_u32GetSquarRoot(u32Input);/*Get value of square root function*/
-	printf("%d\n",u32SquareRoot);  
+	u32SquareRoot=Fun_u32GetSquarRoot(u32Input); /*Get value of function*/
+	printf("%d\n",u32SquareRoot);
 	}
-	while(getch()!='E'); /*exit from main when user write 'E'*/
+	while(getch()!='E'); /*it uses to exit*/
 	return 0;
 }
 
@@ -24,8 +24,8 @@ u32 Fun_u32GetSquarRoot(u32 u32Num){
 	u32 u32Counter=0;
 	u32 u32Reslut;
 
-	while(u32Reslut!=u32Counter){      /*when counter is equal result of number/counter it means counter is equal square root*/
-		u32Counter++;              /*increament counter to chack square root of number*/
+	while(u32Reslut!=u32Counter){
+		u32Counter++;
 		u32Reslut=u32Num/u32Counter;	
 	}
 	printf("The Squar root is ====> ");
