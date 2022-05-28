@@ -3,6 +3,7 @@
 enum Boolean{false,true};
 u8 Chack_u8Based2(u32 u32Iputnumber);
 u8 Chack_u8Based2(u32 u32Iputnumber){
+	if(u32Iputnumber>1){
 	if(u32Iputnumber!=0 &&(u32Iputnumber&(u32Iputnumber-1))==0)/*
 	
 	if(u32Iputnumber!=0) &&             (u32Iputnumber)&(u32Iputnumber-1)==0
@@ -11,7 +12,8 @@ u8 Chack_u8Based2(u32 u32Iputnumber){
 	return true;
 	else
 	return false;
-	
+	}
+	else return false;
 }
 int main(){
 	
